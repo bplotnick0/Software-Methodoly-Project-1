@@ -10,7 +10,7 @@ public class GroceryItem {
     }
 
 ... public boolean equals(Object obj){
-        if (obj == null || !(obj instanceof GroceryItem)){
+        if (!(obj instanceof GroceryItem)){
             return false;
         }else if (((GroceryItem) obj).name == this.name && ((GroceryItem) obj).price == this.price && ((GroceryItem) obj).taxable == this.taxable) {
             return true;
