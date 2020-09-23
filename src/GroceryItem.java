@@ -20,8 +20,13 @@ public class GroceryItem {
 
     }
     public String toString() {
-        return ("itemName:" + " " + name + " " + "$" + price + " " + ":" + " tax free");
-
+        String tax = "is taxable";
+        String noTax = "tax free";
+        if (this.taxable == true) {
+            return ("itemName:" + " " + name + " " + "$" + price + " " + ":" + "" + tax);
+        }else {
+            return ("itemName:" + " " + name + " " + "$" + price + " " + ":" + "" + noTax);
+        }
     }
 
     public String getName() {
@@ -55,6 +60,6 @@ public class GroceryItem {
 
 
     }
-...
+
 
 }
