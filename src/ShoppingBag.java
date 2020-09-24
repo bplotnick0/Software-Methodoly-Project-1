@@ -106,11 +106,10 @@ public class ShoppingBag {
         if (size == 0){
             System.out.println("The bag is empty!");
         } else {
-            System.out.println("You have " + size + " item(s) in the bag: ");
             for (int i = 0; i < size; i++){
                 System.out.println(bag[i]);
             }
-            System.out.println("**End of list");
+
         }
     }
 

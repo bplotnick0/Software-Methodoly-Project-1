@@ -23,9 +23,9 @@ public class GroceryItem {
         String tax = "is taxable";
         String noTax = "tax free";
         if (this.taxable == true) {
-            return ("itemName:" + " " + name + " " + "$" + price + " " + ":" + "" + tax);
+            return (name + " " + "$" + (float)price + " " + ":" + " " + tax);
         }else {
-            return ("itemName:" + " " + name + " " + "$" + price + " " + ":" + "" + noTax);
+            return (name + " " + "$" + (float)price + " " + ":" + " " + noTax);
         }
     }
 
