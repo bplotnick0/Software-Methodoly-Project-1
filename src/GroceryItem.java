@@ -50,16 +50,6 @@ public class GroceryItem {
         this.taxable = newTaxable;
     }
 
-    public static void main (String[] args){
-        GroceryItem a = new GroceryItem("meat", 2.99, false);
-        GroceryItem b = new GroceryItem("meat", 2.99, false);
-        GroceryItem c = new GroceryItem("cheese", 1.99, false);
-        System.out.println(b.toString());
-        System.out.println(a.equals(b));
-        System.out.println(a.equals(c));
-
-
-    }
 
 
 }
